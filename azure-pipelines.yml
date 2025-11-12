@@ -18,5 +18,15 @@ stages:
             backendAzureRmStorageAccountName: 'backendstg03'
             backendAzureRmContainerName: 'aniket'
             backendAzureRmKey: 'strg.tfstate'
+        - task: TerraformTask@5
+          inputs:
+            provider: 'azurerm'
+            command: 'plan'
+            environmentServiceNameAzureRM: 'kolkata'
+        - task: TerraformTask@5
+          inputs:
+            provider: 'azurerm'
+            command: 'apply'
+            environmentServiceNameAzureRM: 'kolkata'
 
 
