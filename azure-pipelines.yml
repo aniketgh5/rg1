@@ -1,0 +1,22 @@
+trigger:
+  branches:
+    include:
+      - feature/*
+pool: Kolkata
+stages:
+  - stage: Build
+    displayName: Build
+    jobs:
+      - job: 
+        displayName: TerraformInit
+        steps:
+        - task: TerraformTask@5
+          inputs:
+            provider: 'azurerm'
+            command: 'init'
+            backendServiceArm: 'kolkata'
+            backendAzureRmStorageAccountName: 'backendstg03'
+            backendAzureRmContainerName: 'aniket'
+            backendAzureRmKey: 'strg.tfstate'
+
+
