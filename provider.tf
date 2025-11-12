@@ -9,7 +9,7 @@ terraform {
     backend azurerm {
       resource_group_name = "backend-rg02"
       storage_account_name = "backendstg03"
-      container_name = "strg"
+      container_name = "aniket"
       key = "strg.tfstate"
     }
 
