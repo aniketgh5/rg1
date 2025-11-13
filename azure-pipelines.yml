@@ -2,6 +2,7 @@ trigger:
   branches:
     include:
       - feature/*
+      - main
 pool: Kolkata
 stages:
   - stage: Build
@@ -24,9 +25,12 @@ stages:
             command: 'plan'
             environmentServiceNameAzureRM: 'kolkata'
         - task: TerraformTask@5
+          displayName: TerraformApply
+          condition:  eq(variables['Build.SourceBranch'], 'refs/heads/main')
           inputs:
             provider: 'azurerm'
             command: 'apply'
             environmentServiceNameAzureRM: 'kolkata'
+
 
 
