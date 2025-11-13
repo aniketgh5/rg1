@@ -7,6 +7,26 @@ rgblock = {
             team = "abc"
         }
     }
+"rg2" = {
+        rgname = "kolabc"
+        location = "westeurope"
+        tags = {
+            company = "xyz"
+            team = "abc"
+        }
+    }
+
+    "rg3" = {
+        rgname = "koluuu"
+        location = "westeurope"
+        tags = {
+            company = "xyz"
+            team = "abc"
+        }
+    }
+
+
+
 }
 
 stgblock = {
