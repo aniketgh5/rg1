@@ -25,8 +25,6 @@ rgblock = {
         }
     }
 
-
-
 }
 
 stgblock = {
