@@ -13,6 +13,9 @@ terraform {
       key = "strg.tfstate"
     }
 
+
+
+
 }
 
 provider "azurerm" {
