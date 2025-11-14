@@ -17,7 +17,7 @@ rgblock = {
     }
 
     "rg3" = {
-        rgname = "koluuu"
+        rgname = "kolwww"
         location = "westeurope"
         tags = {
             company = "xyz"
